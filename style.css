@@ -1,0 +1,75 @@
+:root {
+    --myFont: 'Poppins', sans-serif;
+}
+
+* {
+    font-family: var(--myFont);
+}
+
+/* BACKGROUND */
+#login {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes showLogin {
+    from {
+        margin-top: -10em;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+#login .container .row .col-xxl-4 .form-login-wrapper {
+    animation: showLogin 1s alternate;
+}
+
+#login .container .row .col-xxl-4 .form-login-wrapper form .email input,
+#login .container .row .col-xxl-4 .form-login-wrapper form .password input {
+    padding-left: 2.5em;
+}
+
+#login .container .row .col-xxl-4 .form-login-wrapper form .password .bi-eye,
+#login .container .row .col-xxl-4 .form-login-wrapper form .password .bi-eye-slash {
+    position: absolute;
+    right: 1em;
+    cursor: pointer;
+}
+
+#login .container .row .col-xxl-4 .form-login-wrapper form .password input:focus,
+#login .container .row .col-xxl-4 .form-login-wrapper form .email input:focus {
+    box-shadow: none;
+}
+
+#login .alert-message .alert {
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+@keyframes animationAlertMessage {
+    from {
+        transform: translateX(-5.9em);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#login .alert-message .alert.showAlertMessage {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animationAlertMessage 1s alternate;
+}
+
+/* BACKGROUND END */
