@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Akbar | Form Login</title>
+
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon">
+
+    <!-- MY FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- BOOTSRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <!-- FORM LOGIN -->
+    <main>
+        <section id="login" class="overflow-hidden d-flex align-items-center justify-content-center position-relative">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-8 col-12">
+                        <!-- MESSAGE SUBMIT -->
+                        <div class="alert-message justify-content-center d-flex">
+                            <div class="alert alert-success text-center" role="alert">
+                                <span><i class="bi bi-check2-circle me-1 fs-5"></i></span>
+                                <p class="mb-0">Thanks for logging in.</p>
+                            </div>
+                        </div>
+                        <!-- MESSAGE SUBMIT END -->
+                        <div class="form-login-wrapper py-4 px-3 bg-white rounded-2">
+                            <h2 class="fw-bold text-center">Login</h2>
+                            <!-- FORM -->
+                            <form class="mt-5" id="form" autocomplete="off">
+                                <!-- EMAIL -->
+                                <div class="email d-flex align-items-center">
+                                    <i class="bi bi-person position-absolute ps-2 text-primary fs-5"></i>
+                                    <input type="email" class="email-input form-control border-1 py-2"
+                                        id="exampleFormControlInput1" placeholder="Email address" required>
+                                </div>
+                                <!-- EMAIL END -->
+                                <!-- PASSWORD -->
+                                <div class="password d-flex align-items-center mt-4 position-relative">
+                                    <i class="bi bi-lock position-absolute ps-2 text-primary fs-5"></i>
+                                    <input type="password" class="password-input form-control border-1 py-2"
+                                        id="exampleFormControlInput1" placeholder="Password" required>
+                                    <i class="bi bi-eye-slash"></i>
+                                </div>
+                                <!-- PASSWORD END -->
+                                <div class="sign-in mt-5">
+                                    <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+                                </div>
+                            </form>
+                            <!-- FORM END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <video src="./Assets/video-bg.mp4" height="100%" width="100%" autoplay muted loop
+                class="position-absolute z-n1 object-fit-cover"></video>
+        </section>
+    </main>
+    <!-- FORM LOGIN END -->
+
+    <!-- MY JS -->
+    <script src="./script.js"></script>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
